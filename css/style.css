@@ -104,4 +104,5 @@ header > h1{
     margin-left: 52vh;
     padding: 5px;
     font-size: 24px;
+    flex-direction: columngit;
 }
