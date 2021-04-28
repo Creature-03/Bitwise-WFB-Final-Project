@@ -89,7 +89,7 @@ header > h1{
     position: absolute;
     float: top;
     margin-top: 25vh;
-    margin-left: 10px;
+    margin-left: 20vh;
     padding: 5px;
     font-size: 24px;
 }
@@ -101,7 +101,7 @@ header > h1{
     position: absolute;
     float: top;
     margin-top: 25vh;
-    margin-left: 52vh;
+    margin-left: 80vh;
     padding: 5px;
     font-size: 24px;
     flex-direction: column;
