@@ -79,3 +79,31 @@ nav a:hover{
 .logo img{
     margin-top: 3vh;
 }
+
+.aboutme{
+    display: inline-flex;
+    position: absolute;
+    top: 300px;
+    left: 125px;
+    background-color: #1b1c1e;
+    border-radius: 30px;
+    height: 300px;
+    width: 500px;
+    box-shadow: 10px 12px 10px black;
+    flex-flow: column;
+    
+}
+ .aboutme h1{
+    display: flex;
+    color: #9296e3;
+    font-size: 48px;
+    text-align: center;
+    margin: 70px auto 1px auto;
+ }
+ .aboutme h2{
+     display: flex;
+     color: #767677;
+     font-size: 36px;
+     text-align: center;
+     margin: 30px auto 1px auto;
+ }
