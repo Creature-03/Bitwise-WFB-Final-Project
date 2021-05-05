@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    height: 150vh;
 }
 
 header{
@@ -15,19 +16,21 @@ header{
 #home-bg, #projects-bg, #contact-bg{
     background-color: #141416;
     z-index: -1;
+    position: fixed;
 }
 
 #home-bg img, #projects-bg img, #contact-bg img{
     height: 100vh;
     width: 100vw;
     background-size: contain;
-    opacity: 0.7;
+    position: fixed;
 }
 
 nav{
     display: inline-flex;
     top: 0;
-    position: absolute;
+    position: sticky;
+    z-index: 2;
     height: 10vh;
     width: 100vw;
     justify-content: flex-end;
@@ -91,7 +94,7 @@ nav a:hover{
 
 .languages{
     top: 50vh;
-    left: 55vw;
+    left: 49vw;
 }
 
 .languages h1{
@@ -105,4 +108,33 @@ nav a:hover{
     color: #dc6868;
     font-size: 32px;
     margin: auto;
+}
+
+.projectslist{
+    display: flex;
+    position: absolute;background-color: #1b1c1e;
+    border-radius: 30px;
+    box-shadow: 10px 12px 10px black;
+    flex-flow: column;
+    top: 25vh;
+    left: 60vh;
+    height: 80vh;
+    width: 40vw;
+}
+
+.projectslist h1{
+    margin: auto auto 3px auto;
+    font-size: 48px;
+    color: #dc6868;
+}
+
+.projectslist ul{
+    color:  #9296e3;
+    font-size: 36px;
+    margin: auto;
+}
+
+.projectslist ul a{
+    text-decoration: none;
+    color: #9296e3;
 }
