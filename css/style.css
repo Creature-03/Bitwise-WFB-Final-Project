@@ -83,8 +83,8 @@ nav a:hover{
 .aboutme{
     display: inline-flex;
     position: absolute;
-    top: 300px;
-    left: 125px;
+    top: 30vh;
+    left: 15vw;
     background-color: #1b1c1e;
     border-radius: 30px;
     height: 300px;
@@ -107,3 +107,29 @@ nav a:hover{
      text-align: center;
      margin: 30px auto 1px auto;
  }
+
+.languages{
+    display: inline-flex;
+    position: absolute;
+    top: 50vh;
+    left: 55vw;
+    background-color: #1b1c1e;
+    border-radius: 30px;
+    height: 300px;
+    width: 500px;
+    box-shadow: 10px 12px 10px black;
+    flex-flow: column;
+}
+
+.languages h1{
+    display: flex;
+    color: #9296e3;
+    font-size: 48px;
+    text-align: center;
+    margin: 15px auto 1px auto;
+}
+.languages ul{
+    color: #dc6868;
+    font-size: 32px;
+    margin: auto;
+}
