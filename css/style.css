@@ -71,7 +71,8 @@ nav a:hover{
 /* grey boxes for home page */
 .aboutme, .languages{
     display: flex;
-    position: absolute;background-color: #1b1c1e;
+    position: absolute;
+    background-color: #1b1c1e;
     border-radius: 30px;
     height: 300px;
     width: 500px;
