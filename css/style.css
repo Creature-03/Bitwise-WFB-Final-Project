@@ -204,6 +204,7 @@ input[type=text], select, textarea {
 
   
 
+  /* styling for alternate contact page using emailto: instead of contact form */
   /* #contactcontainer{
     display: flex;
     position: absolute;
