@@ -55,6 +55,7 @@ nav a:hover{
     border: 1px solid whitesmoke;
     border-radius: 6px;
     background-color: rgba(88, 89, 90, 0.5);
+    transition-duration: 0.3s;
 }
 
 .logo{
@@ -177,6 +178,7 @@ input[type=text], select, textarea {
 
   input[type=submit]:hover {
     background-color: #8ae990;
+    transition-duration: 0.3s;
   }
 
   label{
