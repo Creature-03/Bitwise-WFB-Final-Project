@@ -140,7 +140,7 @@ nav a:hover{
     color: #9296e3;
 }
 
-#formcontainer{
+.formcontainer{
     display: flex;
     position: absolute;
     background-color: #1b1c1e;
@@ -176,13 +176,21 @@ input[type=text], select, textarea {
   }
 
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #8ae990;
   }
 
   label{
       color: #9296e3;
       font-size: 24px;
   }
+
+  #cMessage{
+      text-align: center;
+      font-size: 56px;
+      color: #9296e3;
+  }
+
+  
 
   /* #contactcontainer{
     display: flex;
