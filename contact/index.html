@@ -20,21 +20,22 @@
         <a href="./index.html">Contact</a>
     </nav>
 
-    <div id="formcontainer">
+    <div class="formcontainer">
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" id="fname" name="firstname" placeholder="First name">
 
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input type="text" id="lname" name="lastname" placeholder="Last name">
 
-        <label for="subject">Message</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-        <input type="submit" value="Submit">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message" style="height:200px"></textarea>
+        <form action="../confirmation/index.html">
+            <input type="submit" value="Submit">
+        </form>
     </div>
 
     <!-- <div id="contactcontainer">
-        <a href="mailto:meyer.r.andrew@gmail.com" class="contactbutton">Email me</a>
+        <a href="mailto:meyer.r.andrew@gmail.com?subject=Site Contact" class="contactbutton">Email me</a>
     </div> -->
 </body>
 </html>
