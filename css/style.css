@@ -232,10 +232,10 @@ input[type=text], select, textarea {
       margin: auto;
   } */
 
+  /* footer div */
   footer{
       height: 25vh;
       width: 100vw;
-
       position: absolute;
       bottom: -53%;
       left: 0px;
@@ -246,6 +246,7 @@ input[type=text], select, textarea {
       align-content: center;
   }
 
+  /* footer background to prevent icons from blurring */
   #footerbackground{
     height: 25vh;
     width: 100vw;
