@@ -231,3 +231,48 @@ input[type=text], select, textarea {
       box-shadow: 6px 8px 10px black;
       margin: auto;
   } */
+
+  footer{
+      height: 25vh;
+      width: 100vw;
+
+      position: absolute;
+      bottom: -53%;
+      left: 0px;
+      right: 0px;
+      margin-bottom: 0px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+  }
+
+  #footerbackground{
+    height: 25vh;
+    width: 100vw;
+    background-color: rgba(27, 28, 30, 0.9);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    filter: blur(10px);
+  }
+
+  #facebookicon, #twittericon, #instagramicon{
+    height: 48px;
+    width: 48px;
+    padding: 3%;
+    margin: 3%;
+    z-index: 1;
+  }
+
+  #facebookicon{
+      background: url(../media/facebook.svg) 48px 48px no-repeat;
+  }
+
+  #twittericon{
+    background: url(../media/twitter.svg) 48px 48px no-repeat;
+  }
+
+  #instagramicon{
+    background: url(../media/instagram.png) 48px 48px no-repeat;
+  }
