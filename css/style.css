@@ -4,7 +4,8 @@
 
 body{
     margin: 0;
-    height: 150vh;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 header{
@@ -33,8 +34,8 @@ header{
 
 /* set background images to view dimensions */
 #home-bg img, #projects-bg img, #contact-bg img{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-size: contain;
     position: fixed;
 }
@@ -43,13 +44,12 @@ header{
 nav{
     display: inline-flex;
     top: 0;
-    position: sticky;
+    position: fixed;
     z-index: 2;
     height: 10vh;
     width: 100vw;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 10%;
     background-image: linear-gradient(to right, rgba(27, 28, 30, 0) 70%, rgba(27, 28, 30, 0.5));
 }
 
@@ -71,76 +71,79 @@ nav a:hover{
 /* grey boxes for home page */
 .aboutme, .languages{
     display: flex;
-    position: absolute;
+    position: relative;
     background-color: #1b1c1e;
     border-radius: 30px;
-    height: 300px;
-    width: 500px;
+    height: 22%;
+    min-height: 300px;
+    width: 25%;
+    min-width: 350px;
     box-shadow: 10px 12px 10px black;
     flex-flow: column;
 }
 
 .aboutme{
-    top: 30vh;
-    left: 15vw;
+    top: 29vh;
+    left: 19vw;
 }
  .aboutme h1{
     display: flex;
     color: #9296e3;
-    font-size: 48px;
+    font-size: calc(36px + 1vw);
     text-align: center;
     margin: 70px auto 1px auto;
  }
  .aboutme h2{
      display: flex;
      color: #767677;
-     font-size: 36px;
+     font-size: calc(24px + 0.6vw);
      text-align: center;
      margin: 30px auto 1px auto;
  }
 
 .languages{
     top: 50vh;
-    left: 49vw;
+    left: 25vw;
 }
 
 .languages h2{
     display: flex;
     color: #9296e3;
-    font-size: 48px;
+    font-size: calc(36px + 1vw);
     text-align: center;
     margin: 15px auto 1px auto;
 }
 .languages ul{
     color: #dc6868;
-    font-size: 32px;
+    font-size: calc(24px + 0.6vw);
     margin: auto;
 }
 
 /* grey container for projects page list */
 .projectslist{
     display: flex;
-    position: absolute;
+    position: relative;
     background-color: #1b1c1e;
     border-radius: 30px;
     box-shadow: 10px 12px 10px black;
     flex-flow: column;
-    top: 30vh;
-    left: 60vh;
-    height: 90vh;
-    width: 40vw;
+    margin-top: 25vh;
+    top: 10vh;
+    left: 25%;
+    height: fit-content;
+    width: 48%;
+    align-items: center;
 }
 
 .projectslist h1{
-    margin: auto auto 3px auto;
-    font-size: 48px;
+    margin: 3%;
+    font-size: calc(36px + 1vw);
     color: #dc6868;
 }
 
 .projectslist ul{
     color:  #9296e3;
-    font-size: 36px;
-    margin: auto;
+    font-size: calc(24px + 0.6vw);
 }
 
 .projectslist ul a{
@@ -150,19 +153,20 @@ nav a:hover{
 
 .projectslist ul a:hover{
     color: rgb(0, 255, 242);
+    transition-duration: 0.15s;
 }
 
 /* background container for contact form */
 .formcontainer{
     display: flex;
-    position: absolute;
+    position: relative;
     background-color: #1b1c1e;
     border-radius: 30px;
     box-shadow: 10px 12px 10px black;
     flex-flow: column;
     top: 30vh;
-    left: 60vh;
-    height: 60vh;
+    left: 30%;
+    height: fit-content;
     width: 40vw;
     justify-content: center;
     align-items: center;
@@ -175,8 +179,6 @@ input[type=text], select, textarea {
     border: 1px solid #ccc; 
     border-radius: 4px; 
     box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px;
   }
 
   input[type=submit] {
@@ -186,9 +188,8 @@ input[type=text], select, textarea {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 150px;
-    margin-left: 8vw;
-  }
+    width: 20vw;
+}
 
   input[type=submit]:hover {
     background-color: #8ae990;
@@ -197,14 +198,21 @@ input[type=text], select, textarea {
 
   label{
       color: #9296e3;
-      font-size: 24px;
-      margin-left: 9vw;
+      font-size: calc(24px + 0.6vw);
+
+  }
+
+  form{
+      display: inline-flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      margin: 3%;
   }
 
   /* confirmation page message */
   #cMessage{
       text-align: center;
-      font-size: 56px;
+      font-size: calc(36px + 1vw);
       color: #9296e3;
   }
 
@@ -242,11 +250,8 @@ input[type=text], select, textarea {
   footer{
       height: 25vh;
       width: 100vw;
-      position: absolute;
-      bottom: -53%;
-      left: 0px;
-      right: 0px;
-      margin-bottom: 0px;
+      position: relative;
+      top: 100vh;
       display: flex;
       justify-content: center;
       align-content: center;
@@ -254,20 +259,17 @@ input[type=text], select, textarea {
 
   /* footer background to prevent icons from blurring */
   #footerbackground{
-    height: 25vh;
+    height: 30vh;
     width: 100vw;
     background-color: rgba(27, 28, 30, 0.9);
     position: absolute;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
     filter: blur(10px);
   }
 
   #facebookicon, #twittericon, #instagramicon{
     height: 48px;
     width: 48px;
-    padding: 3%;
+    padding: 5%;
     margin: 3%;
     z-index: 1;
   }
