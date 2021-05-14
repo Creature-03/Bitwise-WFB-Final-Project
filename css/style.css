@@ -156,8 +156,8 @@ nav a:hover{
     transition-duration: 0.15s;
 }
 
-/* background container for contact form */
-.formcontainer{
+/* contact form, currently nonfunctional and without backend support */
+/* .formcontainer{
     display: flex;
     position: relative;
     background-color: #1b1c1e;
@@ -172,7 +172,6 @@ nav a:hover{
     align-items: center;
 }
 
-/* contact form sizing and positioning */
 input[type=text], select, textarea {
     width: 25vw; 
     padding: 12px;  
@@ -209,17 +208,16 @@ input[type=text], select, textarea {
       margin: 3%;
   }
 
-  /* confirmation page message */
+
   #cMessage{
       text-align: center;
       font-size: calc(36px + 1vw);
       color: #9296e3;
   }
+  */
 
-  
-
-  /* styling for alternate contact page using emailto: instead of contact form */
-  /* #contactcontainer{
+  /* styling for contact page using emailto:*/
+  #contactcontainer{
     display: flex;
     position: absolute;
     background-color: #1b1c1e;
@@ -244,7 +242,7 @@ input[type=text], select, textarea {
       padding: 5px;
       box-shadow: 6px 8px 10px black;
       margin: auto;
-  } */
+  }
 
   /* footer div */
   footer{
