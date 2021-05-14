@@ -157,7 +157,7 @@ nav a:hover{
 }
 
 /* contact form, currently nonfunctional and without backend support */
-/* .formcontainer{
+.formcontainer{
     display: flex;
     position: relative;
     background-color: #1b1c1e;
@@ -214,10 +214,10 @@ input[type=text], select, textarea {
       font-size: calc(36px + 1vw);
       color: #9296e3;
   }
-  */
+ 
 
   /* styling for contact page using emailto:*/
-  #contactcontainer{
+  /* #contactcontainer{
     display: flex;
     position: absolute;
     background-color: #1b1c1e;
@@ -242,7 +242,7 @@ input[type=text], select, textarea {
       padding: 5px;
       box-shadow: 6px 8px 10px black;
       margin: auto;
-  }
+  } */
 
   /* footer div */
   footer{
@@ -253,7 +253,7 @@ input[type=text], select, textarea {
       display: flex;
       justify-content: center;
       align-content: center;
-  }
+  } 
 
   /* footer background to prevent icons from blurring */
   #footerbackground{
